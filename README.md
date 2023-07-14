@@ -1,6 +1,8 @@
 # text-based-traffic-understanding
 The code and dataset of the KDD23 paper 'A Study of Situational Reasoning for Traffic Understanding' See the full paper [here](https://arxiv.org/pdf/2306.02520.pdf)
 
+Contact author: [Jiarui Zhang](https://saccharomycetes.github.io/)
+
 
 # Datasets README
 
