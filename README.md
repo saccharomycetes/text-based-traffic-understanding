@@ -14,7 +14,7 @@ This repository contains three datasets: `tv.jsonl`, `bdd.jsonl`, and `hdt.jsonl
 
 The `tv.jsonl` dataset has the following keys:
 
-- **question**: A text string representing a question related to scenarios or situations typically observed in TV programs.
+- **question**: A text string describing the 
 - **candidates**: A list of text strings representing possible answers to the question.
 - **answer**: An integer that serves as an index into the list of candidates, corresponding to the correct answer.
 - **class**: A character serving as a classification label for the question.
@@ -47,3 +47,13 @@ The `hdt.jsonl` dataset contains question and answer pairs related to driving te
 These datasets could be useful for training and evaluating models in natural language understanding, specifically in the areas of multiple-choice question answering and text classification. They could also be used for studying the performance of models in understanding and answering questions about TV program content, car behavior in traffic situations, and driving rules or scenarios.
 
 Remember to split the datasets appropriately into training, validation, and test sets when using them to build machine learning models. The `id` field in the `tv.jsonl` and `hdt.jsonl` datasets may be useful for tracking individual examples, but it likely should not be used as a feature in a model.
+
+## Cite 
+```
+@article{zhang2023study,
+  title={A Study of Situational Reasoning for Traffic Understanding},
+  author={Zhang, Jiarui and Ilievski, Filip and Ma, Kaixin and Kollaa, Aravinda and Francis, Jonathan and Oltramari, Alessandro},
+  journal={arXiv preprint arXiv:2306.02520},
+  year={2023}
+}
+```
