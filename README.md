@@ -10,30 +10,31 @@ This repository contains three datasets: `tv.jsonl`, `bdd.jsonl`, and `hdt.jsonl
 
 ## Dataset Structures
 
-### TV Dataset
+### Complex-TV-QA Dataset
 
 The `tv.jsonl` dataset has the following keys:
 
-- **question**: A text string describing the 
-- **candidates**: A list of text strings representing possible answers to the question.
-- **answer**: An integer that serves as an index into the list of candidates, corresponding to the correct answer.
-- **class**: A character serving as a classification label for the question.
-- **id**: An integer that uniquely identifies each row or question in the dataset.
+- **description**: A detailed description of a traffic video
+- **question**: A question that is related to the video
+- **candidates**: A list of text strings representing possible answers to the question
+- **answer**: An integer that serves as an index into the list of candidates, corresponding to the correct answer
+- **class**: The reasoning types in the original [Traffic-QA](https://arxiv.org/pdf/2103.15538.pdf) paper
+- **video_file**: The original video file from the Traffic-QA dataset, you may request the download from [here](https://github.com/SUTDCV/SUTD-TrafficQA)
+- **id**: An integer that uniquely identifies each question in the dataset
 
-### BDD Dataset
+### BDD-QA Dataset
 
-The `bdd.jsonl` dataset has a similar structure but with a few differences:
+The `bdd.jsonl` dataset has the following keys:
 
-- **question**: A text string representing a question.
-- **candidates**: A list of text strings representing possible answers to the question.
-- **answer**: An integer that serves as an index into the list of candidates, corresponding to the correct answer.
-- **class**: A more human-readable text string serving as a classification label for the question.
+- **question**: A text string which briefly describe a traffic senario and a follow up question
+- **candidates**: A list of text strings representing possible answers to the question
+- **answer**: An integer that serves as an index into the list of candidates, corresponding to the correct answer
+- **class**: The action class that this question is related to, which is defined in the paper
+- **id**: An integer that uniquely identifies each question in the dataset
 
-Please note that the `bdd.jsonl` dataset does not include an `id` field.
+### HDT-QA Dataset
 
-### HDT Dataset
-
-The `hdt.jsonl` dataset contains question and answer pairs related to driving tests:
+The `hdt.jsonl` dataset has the following keys:
 
 - **question**: A text string representing a question, typically related to driving rules or scenarios.
 - **candidates**: A list of text strings representing possible answers to the question.
@@ -42,11 +43,18 @@ The `hdt.jsonl` dataset contains question and answer pairs related to driving te
 - **type**: A text string indicating the type of driving test the question pertains to (e.g., permit, motorcycle, CDL).
 - **id**: An integer that uniquely identifies each row or question in the dataset.
 
+The `manuals.jsonl` dataset is a large collection of driving manuals from 51 states of the US, which is oringally crawled from [DMV TEST PRO](https://www.dmv-test-pro.com/), which contains the following keys:
+
+- **text**: A paragraph from the original DMV driving manual
+- **state**: The state of the source of this driving manual
+- **domain**: The knowledge domain of this driving manual, could be one of: `CDL`, `permit`, `motor cycle`
+
+
 ## Usage
 
-These datasets could be useful for training and evaluating models in natural language understanding, specifically in the areas of multiple-choice question answering and text classification. They could also be used for studying the performance of models in understanding and answering questions about TV program content, car behavior in traffic situations, and driving rules or scenarios.
-
-Remember to split the datasets appropriately into training, validation, and test sets when using them to build machine learning models. The `id` field in the `tv.jsonl` and `hdt.jsonl` datasets may be useful for tracking individual examples, but it likely should not be used as a feature in a model.
+To our knowledge, Complex-TV-QA dataset firstly provides the human-annotated dataset for detailed video captions in traffic senario which also related to different complex reasoning questions, which could be potential useful for evaluation of language model on a real word video-QA and video-reasoning research.
+BDD-QA provides a wide range of traffic senarios and evaluate the models ability in decision-making. Which is potentially useful for high-level decision making research in traffic senarios, such as autopilot.
+HDT-QA provides a large collection of driving manuals and driving knowledge test from 51 states of the US, which could be useful for evaluating the role of traffic knowledge in intelligent driving systems.
 
 ## Cite 
 ```
@@ -57,3 +65,7 @@ Remember to split the datasets appropriately into training, validation, and test
   year={2023}
 }
 ```
+
+## Contact
+
+-   `jrzhang [AT] isi.edu`
