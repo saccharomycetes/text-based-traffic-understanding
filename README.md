@@ -47,7 +47,7 @@ The `manuals.jsonl` dataset is a large collection of driving manuals from 51 sta
 
 - **text**: A paragraph from the original DMV driving manual
 - **state**: The state of the source of this driving manual
-- **domain**: The knowledge domain of this driving manual, could be one of: `CDL`, `permit`, `motor cycle`
+- **domain**: The knowledge domain of this driving manual, could be one of: `CDL`, `permit`, `motorcycle`
 
 
 ## Usage
