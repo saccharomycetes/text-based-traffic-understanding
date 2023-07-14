@@ -1,0 +1,9 @@
+model
+plots
+result
+data/bdd/big_bdd.jsonl
+data/bdd/human.txt
+data/hdt/3.jsonl
+data/hdt/4.jsonl
+data/kg
+code
