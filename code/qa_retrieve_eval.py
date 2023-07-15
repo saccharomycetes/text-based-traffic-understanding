@@ -48,7 +48,7 @@ class dpr_uni_model():
         self.passage_encoder = SentenceTransformer('facebook-dpr-ctx_encoder-single-nq-base')
         self.query_encoder = SentenceTransformer('facebook-dpr-question_encoder-single-nq-base')
         count = count_parameters(self.model)
-        print ("parameters:"+str(count))
+        print (f"QA model parameters:{count}")
         self.model.to(self.args.device)
     
     def construct_input(self, question, candidates, sort_index, passages):
@@ -68,8 +68,10 @@ class dpr_uni_model():
             datas = [json.loads(line) for line in f.readlines()]
         if self.args.num_related > 0:
             with open(self.args.corpus_file)as f:
-                    paras = json.load(f)
-            passages = [i for j in paras.keys() for k in paras[j].keys() for i in paras[j][k]]
+                paras = f.readlines()
+                paras = [json.loads(line) for line in paras]
+            passages = [i['text'] for i in paras]
+            # passages = [i for j in paras.keys() for k in paras[j].keys() for i in paras[j][k]]
         else:
             passages = []
         return datas, passages

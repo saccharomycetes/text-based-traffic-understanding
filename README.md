@@ -82,7 +82,7 @@ Please ensure these are installed before running the script.
 The script can be run using the following command:
 
 ```shell
-python qa_eval.py 
+python qa_retrieve_eval.py 
 --data_dir [DATA_DIR]
 --output_dir [OUTPUT_DIR]
 --num_related [NUM_RELATED]
