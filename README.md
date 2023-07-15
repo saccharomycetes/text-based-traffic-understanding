@@ -1,5 +1,5 @@
 # text-based-traffic-understanding
-The code and dataset of the KDD23 paper 'A Study of Situational Reasoning for Traffic Understanding' See the full paper [here](https://arxiv.org/pdf/2306.02520.pdf)
+The dataset of the KDD23 paper 'A Study of Situational Reasoning for Traffic Understanding' See the full paper [here](https://arxiv.org/pdf/2306.02520.pdf)
 
 
 # Datasets README
@@ -18,7 +18,7 @@ The `tv.jsonl` dataset has the following keys:
 - **question**: A question that is related to the video
 - **candidates**: A list of text strings representing possible answers to the question
 - **answer**: An integer that serves as an index into the list of candidates, corresponding to the correct answer
-- **class**: The reasoning types in the original [Traffic-QA](https://arxiv.org/pdf/2103.15538.pdf) paper
+- **class**: The reasoning types defined in the original [Traffic-QA](https://arxiv.org/pdf/2103.15538.pdf) paper
 - **video_file**: The original video file from the Traffic-QA dataset, you may request the download from [here](https://github.com/SUTDCV/SUTD-TrafficQA)
 - **id**: An integer that uniquely identifies each question in the dataset
 
