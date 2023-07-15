@@ -83,19 +83,19 @@ The script can be run using the following command:
 
 ```shell
 python qa_eval.py 
---data_dir [DATA_DIR] 
---output_dir [OUTPUT_DIR] 
---num_related [NUM_RELATED] 
---corpus_file [CORPUS_FILE] 
+--data_dir [DATA_DIR]
+--output_dir [OUTPUT_DIR]
+--num_related [NUM_RELATED]
+--corpus_file [CORPUS_FILE]
 --model_dir [MODEL_DIR]
 ```
 
 Replace the bracketed terms with the appropriate paths or values:
 
-- `[DATA_DIR]`: Directory of the data file
-- `[OUTPUT_DIR]`: Directory where the results should be saved
-- `[NUM_RELATED]`: An integer indicating the number of related items to consider
-- `[CORPUS_FILE]`: Path to the corpus file
+- `[DATA_DIR]`: Directory of the data file that you want to evaluate
+- `[OUTPUT_DIR]`: Directory where the results will be saved
+- `[NUM_RELATED]`: number of retrieved documents you want to retrieve, set it to 0 if you want to run the QA-only evaluation
+- `[CORPUS_FILE]`: Path to the corpus file，which is our `manuals.jsonl` dataset
 - `[MODEL_DIR]`: Directory of the pre-trained model, in our evaluation, we use the [Unified-QA-V2](https://github.com/allenai/unifiedqa)
 
 
@@ -113,8 +113,8 @@ python kg_eval.py
 
 Replace the bracketed terms with the appropriate paths or values:
 
-- `[DATA_DIR]`: Directory of the data file
-- `[OUTPUT_DIR]`: Directory where the results should be saved
+- `[DATA_DIR]`: Directory of the data file that you want to evaluate
+- `[OUTPUT_DIR]`: Directory where the results will be saved
 - `[MODEL_DIR]`: Directory of the pre-trained model
 - `[EVAL_BATCH_SIZE]`: Batch size for evaluation
 
@@ -132,10 +132,10 @@ python nli_eval.py
 
 Replace the bracketed terms with the appropriate paths or values:
 
-- `[DATA_DIR]`: Directory of the data file.
-- `[OUTPUT_DIR]`: Directory where the results should be saved.
-- `[MODEL_DIR]`: Directory of the pre-trained model.
-- `[EVAL_BATCH_SIZE]`: Batch size for evaluation.
+- `[DATA_DIR]`: Directory of the data file that you want to evaluate
+- `[OUTPUT_DIR]`: Directory where the results will be saved
+- `[MODEL_DIR]`: Directory of the pre-trained model, for our NLI evaluation, we use the [Roberta-large-mnli](https://huggingface.co/roberta-large-mnli)
+- `[EVAL_BATCH_SIZE]`: Batch size for evaluation
 
 
 
