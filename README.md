@@ -2,7 +2,9 @@
 The dataset of the KDD23 paper 'A Study of Situational Reasoning for Traffic Understanding' See the full paper [here](https://arxiv.org/pdf/2306.02520.pdf)
 
 
-<embed src="figures/pipeline.pdf" type="application/pdf" width="600" height="500">
+![Alt text](figures/pipeline.png)
+
+
 
 
 # Datasets description
