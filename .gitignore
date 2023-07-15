@@ -8,3 +8,4 @@ data/hdt/4.jsonl
 data/kg
 code
 push.sh
+.gitignore
