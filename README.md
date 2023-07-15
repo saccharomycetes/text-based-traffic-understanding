@@ -52,9 +52,11 @@ The `manuals.jsonl` dataset is a large collection of driving manuals from 51 sta
 
 ## Usage
 
-To our knowledge, Complex-TV-QA dataset firstly provides the human-annotated dataset for detailed video captions in traffic senario which also related to different complex reasoning questions, which could be potential useful for evaluation of language model on a real word video-QA and video-reasoning research.
-BDD-QA provides a wide range of traffic senarios and evaluate the models ability in decision-making. Which is potentially useful for high-level decision making research in traffic senarios, such as autopilot.
-HDT-QA provides a large collection of driving manuals and driving knowledge test from 51 states of the US, which could be useful for evaluating the role of traffic knowledge in intelligent driving systems.
+To our knowledge, the Complex-TV-QA dataset stands as the first of its kind to offer human-annotated, intricate video captions meticulously tailored for traffic scenarios. This dataset uniquely couples these detailed descriptions with a spectrum of complex reasoning questions. The groundbreaking nature of this dataset positions it as a potentially pivotal tool for the evaluation of language models in the context of real-world video-QA and video-reasoning research.
+
+BDD-QA is distinguished by its encompassing range of traffic actions, crafted to rigorously evaluate a model's decision-making abilities in traffcu senario. This makes it a potent tool for high-level decision-making research within traffic contexts, including autonomous driving developments.
+
+HDT-QA, coupled with driving manuals, offers an extensive compendium of driving instructions and driving knowledge tests across all 51 states of the US. This resource is beneficial for assessing the incorporation and impact of traffic knowledge within intelligent driving systems, marking a crucial stride towards more advanced, informed, and safe autonomous driving technology.
 
 ## Cite 
 ```
