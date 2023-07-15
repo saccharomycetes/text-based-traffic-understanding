@@ -52,7 +52,7 @@ The `manuals.jsonl` dataset is a large collection of driving manuals from 51 sta
 
 ## Usage
 
-The Complex-TV-QA dataset, to our knowledge, is the first to provide human-annotated, intricate video captions for traffic scenarios, paired with complex reasoning questions. This pioneering dataset serves as a potentially transformative resource for evaluating language models within real-world video-QA and video-reasoning research.
+The Complex-TV-QA dataset, to our knowledge, is the inaugural resource that provides human-annotated, detailed video captions within traffic scenarios, alongside complex reasoning questions. This novel dataset not only stands as a vital tool for evaluating language models in real-world video-QA and video-reasoning research, but also offers valuable insights for the development and understanding of multi-modal video reasoning models and related works.
 
 BDD-QA is distinguished by its encompassing range of traffic actions, crafted to rigorously evaluate a model's decision-making abilities in traffcu senario. This makes it a potent tool for high-level decision-making research within traffic contexts, including autonomous driving developments.
 
