@@ -6,7 +6,7 @@ The code and dataset of the KDD23 paper 'A Study of Situational Reasoning for Tr
 
 ## Introduction
 
-This repository contains three datasets: `tv.jsonl`, `bdd.jsonl`, and `hdt.jsonl`. All datasets contain a collection of question and answer pairs and are structured in a JSON Lines format, where each line is a separate JSON object corresponding to a single data point or example. The datasets are suitable for tasks in natural language understanding, specifically, multiple-choice question answering and text classification.
+This repository contains four datasets: `tv.jsonl`, `bdd.jsonl`, `hdt.jsonl` and `manuals.jsonl`. All datasets are structured in a JSON Lines format, where each line is a separate JSON object corresponding to a single data point or example.
 
 ## Dataset Structures
 
