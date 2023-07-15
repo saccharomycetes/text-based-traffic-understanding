@@ -146,7 +146,7 @@ Replace the bracketed terms with the appropriate paths or values:
 
 # Cite 
 
-If you use the dataset or code in your research, please cite the following paper:
+If you find our dataset or code to be useful in your research, please consider citing the following paper:
 
 ```
 @article{zhang2023study,
