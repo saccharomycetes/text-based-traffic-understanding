@@ -56,7 +56,7 @@ class t5_eval():
         self.model = T5ForConditionalGeneration.from_pretrained(args.model_dir)
         self.tokenizer = T5Tokenizer.from_pretrained(args.model_dir, do_lower_case=True)
         count = count_parameters(self.model)
-        print ("parameters:"+str(count))
+        print ("model parameters:"+str(count))
         self.model.to(self.args.device)
 
 

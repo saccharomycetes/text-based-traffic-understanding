@@ -147,7 +147,7 @@ def main():
 	eval_dataset = MyDataset(dev_data, tokenizer.pad_token_id)
 
 	count = count_parameters(model)
-	print ("parameters:"+str(count))
+	print ("model parameters:"+str(count))
 	model.eval()
 	model.to(args.device)
 	result = eval(args, model, eval_dataset)
