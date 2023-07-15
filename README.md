@@ -62,6 +62,10 @@ HDT-QA, coupled with driving manuals, offers an extensive compendium of driving 
 
 This repository contains the `qa_eval.py` script, which is an evaluation script for a question-answering (QA) model using the transformers library. The QA model is evaluated on a given dataset, and the results are saved in a specified directory.
 
+And the contains the `kg_eval.py` script, which is an evaluation script for a Knowledge Graph (KG) model using the transformers library.
+
+This repository contains the `nli_eval.py` script, which is an evaluation script for a Natural Language Inference (NLI) model using the transformers library. The NLI model is evaluated on a given dataset, and the results are saved in a specified directory.
+
 ## Dependencies
 
 This script requires the following Python libraries:
@@ -77,39 +81,57 @@ This script requires the following Python libraries:
 
 Please ensure these are installed before running the script.
 
-## Running the script
+## Running the QA and retrieval-QA evaluation script
 
 The script can be run using the following command:
 
 ```shell
-python qa_eval.py --data_dir [DATA_DIR] --output_dir [OUTPUT_DIR] --num_related [NUM_RELATED] --corpus_file [CORPUS_FILE] --model_dir [MODEL_DIR]
+python qa_eval.py 
+--data_dir [DATA_DIR] 
+--output_dir [OUTPUT_DIR] 
+--num_related [NUM_RELATED] 
+--corpus_file [CORPUS_FILE] 
+--model_dir [MODEL_DIR]
 ```
 
 Replace the bracketed terms with the appropriate paths or values:
 
-- `[DATA_DIR]`: Directory of the data file.
-- `[OUTPUT_DIR]`: Directory where the results should be saved.
-- `[NUM_RELATED]`: An integer indicating the number of related items to consider.
-- `[CORPUS_FILE]`: Path to the corpus file.
-- `[MODEL_DIR]`: Directory of the pre-trained model.
-
-## Example
-
-Here's an example of how to run the script:
-
-```shell
-python qa_eval.py --data_dir ../data/hdt/test.jsonl --output_dir ../result/hdt/roberta_retri3b --num_related 1 --corpus_file ../data/hdt/paras.json --model_dir allenai/unifiedqa-v2-t5-3b-1251000
-```
-
-In this example, the script will evaluate the model `allenai/unifiedqa-v2-t5-3b-1251000` on the test data located at `../data/hdt/test.jsonl`, considering 1 related item, with the corpus file located at `../data/hdt/paras.json`. The results will be saved in the directory `../result/hdt/roberta_retri3b`.
+- `[DATA_DIR]`: Directory of the data file
+- `[OUTPUT_DIR]`: Directory where the results should be saved
+- `[NUM_RELATED]`: An integer indicating the number of related items to consider
+- `[CORPUS_FILE]`: Path to the corpus file
+- `[MODEL_DIR]`: Directory of the pre-trained model, in our evaluation, we use the [Unified-QA-V2](https://github.com/allenai/unifiedqa)
 
 
-## Running the script
+## Running the KG evaluation script
 
 The script can be run using the following command:
 
 ```shell
-python kg_eval.py --data_dir [DATA_DIR] --output_dir [OUTPUT_DIR] --model_dir [MODEL_DIR] --eval_batch_size [EVAL_BATCH_SIZE]
+python kg_eval.py 
+--data_dir [DATA_DIR] 
+--output_dir [OUTPUT_DIR] 
+--model_dir [MODEL_DIR] 
+--eval_batch_size [EVAL_BATCH_SIZE]
+```
+
+Replace the bracketed terms with the appropriate paths or values:
+
+- `[DATA_DIR]`: Directory of the data file
+- `[OUTPUT_DIR]`: Directory where the results should be saved
+- `[MODEL_DIR]`: Directory of the pre-trained model
+- `[EVAL_BATCH_SIZE]`: Batch size for evaluation
+
+## Running the NLI evaluation script
+
+The script can be run using the following command:
+
+```shell
+python nli_eval.py 
+--data_dir [DATA_DIR] 
+--output_dir [OUTPUT_DIR] 
+--model_dir [MODEL_DIR] 
+--eval_batch_size [EVAL_BATCH_SIZE]
 ```
 
 Replace the bracketed terms with the appropriate paths or values:
@@ -119,21 +141,9 @@ Replace the bracketed terms with the appropriate paths or values:
 - `[MODEL_DIR]`: Directory of the pre-trained model.
 - `[EVAL_BATCH_SIZE]`: Batch size for evaluation.
 
-## Example
-
-Here's an example of how to run the script:
-
-```shell
-python kg_eval.py --data_dir ../data/hdt/test.jsonl --output_dir ../result/hdt/roberta_t5kg --model_dir ../model/t5_large_kg --eval_batch_size 1
-```
-
-In this example, the script will evaluate the model located at `../model/t5_large_kg` on the test data located at `../data/hdt/test.jsonl` with an evaluation batch size of 1. The results will be saved in the directory `../result/hdt/roberta_t5kg`.
 
 
-
-
-
-## Cite 
+# Cite 
 ```
 @article{zhang2023study,
   title={A Study of Situational Reasoning for Traffic Understanding},
