@@ -1,8 +1,8 @@
-# text-based-traffic-understanding
+# Text-based-traffic-understanding
 The dataset of the KDD23 paper 'A Study of Situational Reasoning for Traffic Understanding' See the full paper [here](https://arxiv.org/pdf/2306.02520.pdf)
 
 
-# Datasets README
+# Datasets description
 
 ## Introduction
 
