@@ -99,7 +99,7 @@ Replace the bracketed terms with the appropriate paths or values:
 - `[MODEL_DIR]`: Directory of the pre-trained model, in our evaluation, we use the [Unified-QA-V2](https://github.com/allenai/unifiedqa)
 
 
-## Running the KG evaluation script
+## Running the KG model evaluation script
 
 The script can be run using the following command:
 
@@ -115,10 +115,10 @@ Replace the bracketed terms with the appropriate paths or values:
 
 - `[DATA_DIR]`: Directory of the data file that you want to evaluate
 - `[OUTPUT_DIR]`: Directory where the results will be saved
-- `[MODEL_DIR]`: Directory of the pre-trained model
+- `[MODEL_DIR]`: Directory of the pre-trained model (we haven't uploaded this model for now, will be released soon)
 - `[EVAL_BATCH_SIZE]`: Batch size for evaluation
 
-## Running the NLI evaluation script
+## Running the NLI model evaluation script
 
 The script can be run using the following command:
 
