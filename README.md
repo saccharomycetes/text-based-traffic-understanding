@@ -1,5 +1,5 @@
 # Text-based-traffic-understanding
-The dataset of the KDD23 paper 'A Study of Situational Reasoning for Traffic Understanding' See the full paper [here](https://arxiv.org/pdf/2306.02520.pdf)
+The dataset and code of the KDD23 paper 'A Study of Situational Reasoning for Traffic Understanding' See the full paper [here](https://arxiv.org/pdf/2306.02520.pdf)
 
 
 ![Alt text](figures/pipeline.png)
@@ -25,7 +25,7 @@ The `tv.jsonl` dataset has the following keys:
 - **answer**: An integer that serves as an index into the list of candidates, corresponding to the correct answer
 - **class**: The reasoning types defined in the original [Traffic-QA](https://arxiv.org/pdf/2103.15538.pdf) paper
 - **video_file**: The original video file from the Traffic-QA dataset, you may request the download from [here](https://github.com/SUTDCV/SUTD-TrafficQA)
-- **id**: An integer that uniquely identifies each question in the dataset
+- **id**: Indentifier
 
 ### BDD-QA Dataset
 
@@ -35,7 +35,7 @@ The `bdd.jsonl` dataset has the following keys:
 - **candidates**: A list of text strings representing possible answers to the question
 - **answer**: An integer that serves as an index into the list of candidates, corresponding to the correct answer
 - **class**: The action class that this question is related to, which is defined in the paper
-- **id**: An integer that uniquely identifies each question in the dataset
+- **id**: Indentifier
 
 ### HDT-QA Dataset
 
@@ -46,7 +46,7 @@ The `hdt.jsonl` dataset has the following keys:
 - **answer**: An integer that serves as an index into the list of candidates, corresponding to the correct answer.
 - **state**: A text string indicating the state from which the question was sourced.
 - **type**: A text string indicating the type of driving test the question pertains to (e.g., permit, motorcycle, CDL).
-- **id**: An integer that uniquely identifies each row or question in the dataset.
+- **id**: Indentifier
 
 The `manuals.jsonl` dataset is a large collection of driving manuals from 51 states of the US, which is oringally crawled from [DMV TEST PRO](https://www.dmv-test-pro.com/), which contains the following keys:
 
@@ -145,6 +145,9 @@ Replace the bracketed terms with the appropriate paths or values:
 
 
 # Cite 
+
+If you use the dataset or code in your research, please cite the following paper:
+
 ```
 @article{zhang2023study,
   title={A Study of Situational Reasoning for Traffic Understanding},
