@@ -60,24 +60,20 @@ HDT-QA, coupled with driving manuals, offers an extensive compendium of driving 
 
 # Evaluation Scripts
 
-This repository contains the `qa_eval.py` script, which is an evaluation script for a question-answering (QA) model using the transformers library. The QA model is evaluated on a given dataset, and the results are saved in a specified directory.
-
-And the contains the `kg_eval.py` script, which is an evaluation script for a Knowledge Graph (KG) model using the transformers library.
-
-This repository contains the `nli_eval.py` script, which is an evaluation script for a Natural Language Inference (NLI) model using the transformers library. The NLI model is evaluated on a given dataset, and the results are saved in a specified directory.
+In the `code` folder we have the evaluation code for the experiments in the paper.
 
 ## Dependencies
 
-This script requires the following Python libraries:
+Firstly, clone this repo to you local folder:
+```
+git clone https://github.com/saccharomycetes/text-based-traffic-understanding.git
+cd text-based-traffic-understanding
+```
 
-- PyTorch
-- Transformers
-- Sentence Transformers
-- numpy
-- json
-- tqdm
-- argparse
-- difflib
+Then you can install the required packages by 
+```
+pip install -r requirements.txt
+```
 
 Please ensure these are installed before running the script.
 
