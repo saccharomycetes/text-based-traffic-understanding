@@ -17,7 +17,7 @@ This repository contains four datasets: `tv.jsonl`, `bdd.jsonl`, `hdt.jsonl` and
 
 ### Complex-TV-QA Dataset
 
-The `tv.jsonl` dataset has the following keys:
+The `tv.jsonl` dataset has the following fields:
 
 - **description**: A detailed description of a traffic video
 - **question**: A question that is related to the video
@@ -29,7 +29,7 @@ The `tv.jsonl` dataset has the following keys:
 
 ### BDD-QA Dataset
 
-The `bdd.jsonl` dataset has the following keys:
+The `bdd.jsonl` dataset has the following fields:
 
 - **question**: A text string which briefly describe a traffic senario and a follow up question
 - **candidates**: A list of text strings representing possible answers to the question
@@ -39,7 +39,7 @@ The `bdd.jsonl` dataset has the following keys:
 
 ### HDT-QA Dataset
 
-The `hdt.jsonl` dataset has the following keys:
+The `hdt.jsonl` dataset has the following fields:
 
 - **question**: A text string representing a question, typically related to driving rules or scenarios.
 - **candidates**: A list of text strings representing possible answers to the question.
