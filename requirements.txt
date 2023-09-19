@@ -1,8 +1,6 @@
-python==3.7.10
-PyTorch==1.9.0
-Transformers==4.11.3
-Sentence-Transformers==2.2.2
-numpy==1.21.6
+torch>=1.9.0
+transformers>=4.28.0
+numpy>=1.21.6
 tqdm==4.64.1
 argparse==1.4.0
 nltk==3.7
