@@ -6,4 +6,5 @@ data/bdd/human.txt
 data/hdt/3.jsonl
 data/hdt/4.jsonl
 data/kg
+
 .gitignore
